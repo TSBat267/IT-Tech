@@ -18,6 +18,9 @@
             android:name=".PeriodReg"
             android:exported="false" />
         <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".Cash_reg"
             android:exported="false" />
         <activity

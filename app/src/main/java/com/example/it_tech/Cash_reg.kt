@@ -1,6 +1,5 @@
 package com.example.it_tech
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
@@ -23,19 +22,17 @@ class Cash_reg : AppCompatActivity() {
     private lateinit var next: Button
 
 
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cash_reg)
-
-        //cashChoose = findViewById(R.id.cashChoose)
-        //usercash = findViewById(R.id.usercash)
+    //cashChoose = findViewById(R.id.cashChoose)
+    //usercash = findViewById(R.id.usercash)
 
 //    firstcash = findViewById(R.id.firstcash)
 //    secondcash = findViewById(R.id.secondcash)
 //    thridcash = findViewById(R.id.thridcash)
-        //    next = findViewById(R.id.next)
+    //    next = findViewById(R.id.next)
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_cash_reg)
 
         firstcash.text = "500 000";
         secondcash.text = "1 000 000";
@@ -55,14 +52,12 @@ class Cash_reg : AppCompatActivity() {
             usercash.text = thridcash.text as Editable?
         }
 
-        currentBalance = (usercash.text as String).toInt()
-
         next.setOnClickListener{
-            val intent = Intent(this, PeriodReg:: class.java)
-
-            startActivity(intent)
+            currentBalance = (usercash.text as String).toInt()
         }
 
     }
 
 }
+
+class 
