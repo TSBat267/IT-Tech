@@ -59,5 +59,3 @@ class Cash_reg : AppCompatActivity() {
     }
 
 }
-
-class 
