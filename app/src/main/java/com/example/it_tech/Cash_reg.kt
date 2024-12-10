@@ -18,6 +18,7 @@ class Cash_reg : AppCompatActivity() {
     private lateinit var cashChoose: TextView
     private lateinit var usercash: EditText
 
+
     private lateinit var firstcash: Button
     private lateinit var secondcash: Button
     private lateinit var thridcash: Button
@@ -39,36 +40,20 @@ class Cash_reg : AppCompatActivity() {
         thridcash = findViewById(R.id.passwordEdit)
         next = findViewById(R.id.loginButton)
 
-        val name = usercash.text.toString()
+       currentBalance = (usercash.text.toString()).toInt()
 
-        firstcash.setOnClickListener {
-            usercash.text = firstcash.text as Editable?
+
+        if (currentBalance == 0 )
+        {
+            Toast.makeText(this, "Вклад не выбран", Toast.LENGTH_LONG).show()
+        }
+        else
+        {
+            val intent = Intent(this, PeriodReg:: class.java)
+
+            startActivity(intent)
         }
 
-        secondcash.setOnClickListener {
-            usercash.text = secondcash.text as Editable?
-        }
-
-        thridcash.setOnClickListener{
-            usercash.text = thridcash.text as Editable?
-        }
-
-        next.setOnClickListener{
-            currentBalance = (usercash.text as String).toInt()
-
-
-            if (currentBalance == 0 )
-            {
-                Toast.makeText(this, "Вклад не выбран", Toast.LENGTH_LONG).show()
-            }
-            else
-            {
-                val intent = Intent(this, PeriodReg:: class.java)
-
-                startActivity(intent)
-            }
-
-        }
 
     }
 
