@@ -1,6 +1,5 @@
 package com.example.it_tech
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -10,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class AuthActivity : AppCompatActivity() {
-    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)//ссылка на файл xml
