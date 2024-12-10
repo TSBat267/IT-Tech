@@ -1,11 +1,14 @@
 package com.example.it_tech
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.time.Period
 
 
 class Cash_reg : AppCompatActivity() {
@@ -22,21 +25,19 @@ class Cash_reg : AppCompatActivity() {
     private lateinit var next: Button
 
 
-    //cashChoose = findViewById(R.id.cashChoose)
-    //usercash = findViewById(R.id.usercash)
 
-//    firstcash = findViewById(R.id.firstcash)
-//    secondcash = findViewById(R.id.secondcash)
-//    thridcash = findViewById(R.id.thridcash)
-    //    next = findViewById(R.id.next)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cash_reg)
 
-        firstcash.text = "500 000";
-        secondcash.text = "1 000 000";
-        thridcash.text = "2 000 000";
+        cashChoose = findViewById(R.id.topTextView)
+        usercash = findViewById(R.id.balance)
+
+        firstcash = findViewById(R.id.akchii)
+        secondcash = findViewById(R.id.passwordEditTex)
+        thridcash = findViewById(R.id.passwordEdit)
+        next = findViewById(R.id.loginButton)
 
         val name = usercash.text.toString()
 
@@ -54,6 +55,19 @@ class Cash_reg : AppCompatActivity() {
 
         next.setOnClickListener{
             currentBalance = (usercash.text as String).toInt()
+
+
+            if (currentBalance == 0 )
+            {
+                Toast.makeText(this, "Вклад не выбран", Toast.LENGTH_LONG).show()
+            }
+            else
+            {
+                val intent = Intent(this, PeriodReg:: class.java)
+
+                startActivity(intent)
+            }
+
         }
 
     }
