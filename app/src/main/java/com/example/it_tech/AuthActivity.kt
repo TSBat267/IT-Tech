@@ -16,10 +16,10 @@ class AuthActivity : AppCompatActivity() {
         val userLogin: EditText = findViewById(R.id.nameEditText)//текстовоое поле для ввода логина для аунтификации
         val userPass: EditText = findViewById(R.id.passwordEditText)//тестовое поле для ввода пароля для аунтификации
         val button: Button = findViewById(R.id.authButton)//кнопка входа
-        val linkToReg: TextView = findViewById(R.id.loginButton)//надпись войти, котора переносит на страницу регистрации
+        val linkToReg: TextView = findViewById(R.id.loginButton)//надпись зарегистрироваться, котора переносит на страницу регистрации
 
             linkToReg.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, StartPage::class.java)//!!заменить на путь страницы, которая будет открываться первой
             startActivity(intent)
         }
 

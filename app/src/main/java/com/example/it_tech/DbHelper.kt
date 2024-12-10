@@ -34,4 +34,6 @@ class DbHelper(val context: Context, val factory: SQLiteDatabase.CursorFactory?)
         val result = db.rawQuery("SELECT* FROM users WHERE login = '$login' AND pass = '$pass'", null)
         return result.moveToFirst()
     }
+
+
 }
