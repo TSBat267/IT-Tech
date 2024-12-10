@@ -43,6 +43,10 @@ class MainActivity : AppCompatActivity() {
                 val db = DbHelper(this, null)
                 db.addUser(user)
                 Toast.makeText(this, "Пользователь $login добавлен", Toast.LENGTH_LONG).show()
+                linkToAuth.setOnClickListener {
+                    val intent = Intent(this, AuthActivity::class.java)
+                    startActivity(intent)
+                }
 
                 userLogin.text.clear()
                 userEmail.text.clear()
