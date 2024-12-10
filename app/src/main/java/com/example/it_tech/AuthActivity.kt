@@ -17,7 +17,7 @@ class AuthActivity : AppCompatActivity() {
         val userLogin: EditText = findViewById(R.id.)//текстовоое поле для ввода логина для аунтификации
         val userPass: EditText = findViewById(R.id.)//тестовое поле для ввода пароля для аунтификации
         val button: Button = findViewById(R.id.)//кнопка входа для аунтификации
-        val linkToReg: TextView = findViewById(R.id.)//надпись войти, котора переносит на страницу входа для аунтификации
+        val linkToReg: TextView = findViewById(R.id.)//надпись войти, котора переносит на страницу регистрации
 
         linkToReg.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val userLogin: EditText = findViewById(R.id.)//текстовоое поле для ввода логина
-        val userEmail: EditText = findViewById(R.id.)//текстовое поле для ввода почты
-        val userPass: EditText = findViewById(R.id.)//тестовое поле для ввода пароля
-        val button: Button = findViewById(R.id.)//кнопка входа
-        val linkToAuth: TextView = findViewById(R.id.)//надпись ссылка для перехода к странице регистрации
+        val userLogin: EditText = findViewById(R.id.nameEditText)//текстовоое поле для ввода логина
+        val userEmail: EditText = findViewById(R.id.emailEditText)//текстовое поле для ввода почты
+        val userPass: EditText = findViewById(R.id.passwordEditText)//тестовое поле для ввода пароля
+        val button: Button = findViewById(R.id.registerButton)//кнопка регистрация
+        val linkToAuth: TextView = findViewById(R.id.)//надпись ссылка для перехода к странице входа
 
         linkToAuth.setOnClickListener {
             val intent = Intent(this, AuthActivity::class.java)

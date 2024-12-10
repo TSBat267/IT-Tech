@@ -8,10 +8,74 @@
 	android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-	/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<TextView
+		android:id="@+id/registerText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="Регистрация"
+		android:textSize="34sp"
+		android:layout_marginBottom="50dp" />
+
+
+
+	<EditText
+		android:id="@+id/emailEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Email"
+		android:inputType="textEmailAddress"
+		android:minHeight="48dp" />
+
+	<EditText
+		android:id="@+id/nameEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Имя"
+		android:inputType="textPersonName"
+		android:minHeight="48dp" />
+
+	<EditText
+		android:id="@+id/passwordEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Пароль"
+		android:inputType="textPassword"
+		android:minHeight="48dp" />
+
+	<EditText
+		android:id="@+id/confirmPasswordEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Подтвердите пароль"
+		android:inputType="textPassword"
+		android:minHeight="48dp" />
+
+	<Button
+		android:id="@+id/registerButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Зарегистрироваться"
+		android:textSize="18sp"
+		android:layout_marginBottom="18dp"/> <!-- Отступ снизу -->
+
+	<Button
+		android:id="@+id/loginButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Войти"
+		android:textSize="18sp"/> <!-- Без отступа для этой кнопки -->
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+
 
 </LinearLayout>
