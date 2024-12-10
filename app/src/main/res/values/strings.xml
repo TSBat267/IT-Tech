@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">IT-Tech</string>
+    <string name="hello">TextView</string>
+    <string name="start">Start</string>
+    <string name="button">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="cash_reg">TextView</string>
 </resources>
