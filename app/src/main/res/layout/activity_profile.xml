@@ -29,38 +29,6 @@
         tools:layout_editor_absoluteY="283dp"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/buttonInfo"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="Личные данные"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="350dp" />
-
-    <Button
-        android:id="@+id/buttonNotific"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="Уведомления"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <Button
-        android:id="@+id/buttonQuestion"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="Часто задаваемые вопросы"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="450
-" />
-
     <ImageButton
         android:id="@+id/buttonExit"
         android:layout_width="30dp"

@@ -15,33 +15,42 @@ class AuthActivity : AppCompatActivity() {
 
         val userLogin: EditText = findViewById(R.id.nameEditText)//текстовоое поле для ввода логина для аунтификации
         val userPass: EditText = findViewById(R.id.passwordEditText)//тестовое поле для ввода пароля для аунтификации
-        val button: Button = findViewById(R.id.authButton)//кнопка входа
-        val linkToReg: TextView = findViewById(R.id.loginButton)//надпись зарегистрироваться, котора переносит на страницу регистрации
+        val button: Button = findViewById(R.id.aButt)//кнопка входа
+        val linkToReg: TextView = findViewById(R.id.lView)//надпись зарегистрироваться, котора переносит на страницу регистрации
 
             linkToReg.setOnClickListener {
             val intent = Intent(this, StartPage::class.java)//!!заменить на путь страницы, которая будет открываться первой
             startActivity(intent)
         }
 
-        button.setOnClickListener{
+        button.setOnClickListener {
             val login = userLogin.text.toString().trim()
             val pass = userPass.text.toString().trim()
 
-            if(login == "" || pass == "")
+            if (login.isEmpty() || pass.isEmpty()) {
                 Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
-            else{
+            } else {
                 val db = DbHelper(this, null)
                 val isAuth = db.getUser(login, pass)
 
-                if(isAuth) {
+                if (isAuth) {
                     Toast.makeText(this, "Пользователь $login авторизован", Toast.LENGTH_LONG).show()
                     userLogin.text.clear()
                     userPass.text.clear()
-                    //val intent = Intent(this, /*название страницы, на которую мы переходим*/::class.java)
-                    //startActivity(intent)
+
+                    // Переход на страницу профиля
+                    val intent1 = Intent(this, ProfileActivity::class.java)
+                    intent1.putExtra("EXTRA_USER_LOGIN", login) // Передаем логин
+                    startActivity(intent1)
+
+                    val intent = Intent(this, StartPage::class.java)
+                    startActivity(intent)
+
+                } else {
+                    Toast.makeText(this, "Пользователь $login НЕ авторизован", Toast.LENGTH_LONG).show()
                 }
-                else Toast.makeText(this, "Пользователь $login НЕ авторизован", Toast.LENGTH_LONG).show()
             }
         }
+
     }
 }

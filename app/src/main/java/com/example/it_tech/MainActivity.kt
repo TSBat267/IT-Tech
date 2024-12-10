@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         val userEmail: EditText = findViewById(R.id.emailEditText)//текстовое поле для ввода почты
         val userPass: EditText = findViewById(R.id.passwordEditText)//тестовое поле для ввода пароля
         val userRelPass: EditText = findViewById(R.id.confirmPasswordEditText)
-        val button: Button = findViewById(R.id.registerButton)//кнопка регистрация
-        val linkToAuth: TextView = findViewById(R.id.loginButton)//надпись ссылка для перехода к странице входа
+        val button: Button = findViewById(R.id.regButton)//кнопка регистрация
+        val linkToAuth: TextView = findViewById(R.id.logButton)//надпись ссылка для перехода к странице входа
 
         linkToAuth.setOnClickListener {
             val intent = Intent(this, AuthActivity::class.java)

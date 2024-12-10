@@ -6,12 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+    tools:context=".AuthActivity">
 
     <TextView
         android:id="@+id/registerText"
@@ -39,27 +34,24 @@
         android:layout_marginTop="26dp"
         android:minHeight="48dp" />
 
+
     <Button
-        android:id="@+id/authButton"
+        android:id="@+id/aButt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
         android:text="Войти"
-        android:textSize="18sp"
-        android:layout_marginBottom="18dp"/> <!-- Отступ снизу -->
+        android:textSize="18sp" />
 
+    <!-- Без отступа для этой кнопки -->
 
     <TextView
-        android:id="@+id/loginButton"
+        android:id="@+id/lView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:gravity="center"
         android:text="Зарегистрироваться"
-        android:layout_marginTop="6dp"
-        android:textSize="20sp"/> <!-- Без отступа для этой кнопки -->
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:textSize="20sp" />
 
 </LinearLayout>
