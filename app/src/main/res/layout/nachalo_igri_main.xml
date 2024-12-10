@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:layout_marginTop="66dp"
+        android:text="Привет,уважаемый пользователь, это симулятор инвестора, предлагаем начать твоё обучение в мире инверстиций"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/registerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="Начать инвестиции"
+        android:textSize="25sp" /><!-- Отступ снизу -->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AutoCompleteTextView" />
+</LinearLayout>
+
+

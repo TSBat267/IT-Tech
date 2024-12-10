@@ -1,25 +1,24 @@
 package com.example.it_tech
 
-import android.os.Bundle
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
+import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.Lifecycle
+import androidx.appcompat.app.AppCompatActivity
 
 class AuthActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanseState: Bundle?){
-        super.onCreate(savedInstanseState)
-        setContentView(R.layout.)//ссылка на файл xml
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_auth)//ссылка на файл xml
 
-        val userLogin: EditText = findViewById(R.id.)//текстовоое поле для ввода логина для аунтификации
-        val userPass: EditText = findViewById(R.id.)//тестовое поле для ввода пароля для аунтификации
-        val button: Button = findViewById(R.id.)//кнопка входа для аунтификации
-        val linkToReg: TextView = findViewById(R.id.)//надпись войти, котора переносит на страницу регистрации
+        val userLogin: EditText = findViewById(R.id.nameEditText)//текстовоое поле для ввода логина для аунтификации
+        val userPass: EditText = findViewById(R.id.passwordEditText)//тестовое поле для ввода пароля для аунтификации
+        val button: Button = findViewById(R.id.authButton)//кнопка входа
+        val linkToReg: TextView = findViewById(R.id.loginButton)//надпись войти, котора переносит на страницу регистрации
 
-        linkToReg.setOnClickListener {
+            linkToReg.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -43,5 +42,6 @@ class AuthActivity : AppCompatActivity() {
                 }
                 else Toast.makeText(this, "Пользователь $login НЕ авторизован", Toast.LENGTH_LONG).show()
             }
+        }
     }
 }

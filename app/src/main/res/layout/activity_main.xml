@@ -64,12 +64,15 @@
 		android:textSize="18sp"
 		android:layout_marginBottom="18dp"/> <!-- Отступ снизу -->
 
-	<Button
+	<TextView
 		android:id="@+id/loginButton"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:gravity="center"
 		android:text="Войти"
-		android:textSize="18sp"/> <!-- Без отступа для этой кнопки -->
+		android:layout_marginTop="6dp"
+		android:textSize="20sp"/> <!-- Без отступа для этой кнопки -->
+
 
 	<View
 		android:layout_width="match_parent"
