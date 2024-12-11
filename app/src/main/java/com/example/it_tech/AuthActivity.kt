@@ -25,27 +25,28 @@ class AuthActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        button.setOnClickListener {
+        button.setOnClickListener{
             val login = userLogin.text.toString().trim()
             val pass = userPass.text.toString().trim()
 
-            if (login.isEmpty() || pass.isEmpty()) {
+            if(login == "" || pass == "")
                 Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
-            } else {
+            else{
                 val db = DbHelper(this, null)
                 val isAuth = db.getUser(login, pass)
 
-                if (isAuth) {
+                if(isAuth) {
                     Toast.makeText(this, "Пользователь $login авторизован", Toast.LENGTH_LONG).show()
-                    userLogin.text.clear()
-                    userPass.text.clear()
 
-                    // Переход на страницу профиля
                     val intent1 = Intent(this, ProfileActivity::class.java)
-                    intent1.putExtra("EXTRA_USER_LOGIN", login) // Передаем логин
+                    intent1.putExtra("EXTRA_USER_LOGIN", login)
                     startActivity(intent1)
 
-                } else {
+
+                    userLogin.text.clear()
+                    userPass.text.clear()
+                }
+                else {
                     Toast.makeText(this, "Пользователь $login НЕ авторизован", Toast.LENGTH_LONG).show()
                 }
             }

@@ -9,33 +9,39 @@
         android:id="@+id/imageViews"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="108dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile"
-        tools:layout_editor_absoluteY="117dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="404dp"
         android:gravity="center"
         android:text="$login"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="283dp"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/buttonExit"
-        android:layout_width="50dp"
-        android:layout_height="52dp"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
