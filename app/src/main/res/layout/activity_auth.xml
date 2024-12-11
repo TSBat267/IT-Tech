@@ -13,43 +13,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="140dp"
         android:text="Вход"
         android:textSize="34sp"
         android:layout_marginBottom="50dp" />
 
     <EditText
-        android:id="@+id/nameEditText"
+        android:id="@+id/nameEText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:hint="Имя"
         android:inputType="textEmailAddress"
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/passwordEText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:hint="Пароль"
         android:inputType="textPassword"
         android:layout_marginTop="26dp"
         android:minHeight="48dp" />
 
 
+    <!-- Без отступа для этой кнопки -->
+
     <Button
         android:id="@+id/aButt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="20dp"
         android:text="Войти"
         android:textSize="18sp" />
-
-    <!-- Без отступа для этой кнопки -->
 
     <TextView
         android:id="@+id/lView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Зарегистрироваться"
         android:textSize="20sp" />

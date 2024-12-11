@@ -19,17 +19,19 @@
         android:textSize="24sp"
         tools:ignore="HardcodedText" />
 
+    <!-- Отступ снизу -->
+
+
     <Button
         android:id="@+id/registerTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="Начать инвестиции"
         android:textSize="25sp"
-        tools:ignore="HardcodedText" /><!-- Отступ снизу -->
-
+        tools:ignore="HardcodedText" />
 
     <View
         android:layout_width="match_parent"

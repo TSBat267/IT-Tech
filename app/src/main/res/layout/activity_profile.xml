@@ -31,11 +31,11 @@
 
     <ImageButton
         android:id="@+id/buttonExit"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteX="345dp"
         tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
