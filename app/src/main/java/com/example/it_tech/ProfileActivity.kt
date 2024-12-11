@@ -26,7 +26,8 @@ class ProfileActivity : AppCompatActivity() {
         textUserName.text = userLogin ?: "Гость"
 
         buttonExit.setOnClickListener {
-            finish()
+            val intent = Intent(this, ToolActivity::class.java)
+            startActivity(intent)
         }
     }
 }

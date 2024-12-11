@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".StockActivity">
 
 
     <View
@@ -42,7 +44,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/button_investment_tools2"
+            android:id="@+id/button_investment_tools"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -50,11 +52,17 @@
             android:text="Инструменты инвестиций" />
 
         <Button
-            android:id="@+id/button_wallet2"
+            android:id="@+id/button_wallet"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Кошелёк" />
+        <Button
+            android:id="@+id/button_prof"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Профиль" />
     </LinearLayout>
 
 </LinearLayout>

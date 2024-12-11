@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    tools:context=".ToolActivity">
 
 
     <View
@@ -32,7 +34,7 @@
         android:textSize="20sp"
         android:minHeight="48dp" />
     <Button
-        android:id="@+id/passwordEditTex"
+        android:id="@+id/obligachii"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -42,7 +44,7 @@
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/passwordEdit"
+        android:id="@+id/value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -53,7 +55,7 @@
 
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/metal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -91,6 +93,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Кошелёк" />
+
+        <Button
+            android:id="@+id/button_prof"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Профиль" />
     </LinearLayout>
 </LinearLayout>
 
