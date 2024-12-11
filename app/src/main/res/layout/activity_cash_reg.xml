@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 android:padding="16dp"
@@ -19,27 +20,31 @@ android:gravity="center">
     android:gravity="center"
     android:layout_marginTop="66dp"
     android:text="Выберите сумму инвестиционного портфеля"
-    android:textSize="28sp" />
+    android:textSize="28sp"
+    tools:ignore="HardcodedText" />
 
-<EditText
-    android:id="@+id/balance"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-android:gravity="center"
-android:hint="Введите сумму"
-android:inputType="textEmailAddress"
-android:minHeight="48dp"
-android:textSize="20sp" />
+    <EditText
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="Введите сумму"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
 <Button
     android:id="@+id/akchii"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-android:gravity="center"
-android:text="100 000"
-android:layout_marginTop="26dp"
-android:textSize="20sp"
-android:minHeight="48dp" />
+    android:gravity="center"
+    android:text="100 000"
+    android:layout_marginTop="26dp"
+    android:textSize="20sp"
+    android:minHeight="48dp"
+    tools:ignore="HardcodedText,VisualLintButtonSize" />
 <Button
     android:id="@+id/passwordEditTex"
     android:layout_width="match_parent"
@@ -48,7 +53,8 @@ android:minHeight="48dp" />
     android:text="500 000"
     android:layout_marginTop="26dp"
     android:textSize="20sp"
-    android:minHeight="48dp" />
+    android:minHeight="48dp"
+    tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 <Button
     android:id="@+id/passwordEdit"
@@ -58,21 +64,23 @@ android:minHeight="48dp" />
     android:text="1 000 000"
     android:layout_marginTop="26dp"
     android:textSize="20sp"
-    android:minHeight="48dp" />
+    android:minHeight="48dp"
+    tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 
 <Button
-android:id="@+id/loginButton"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:gravity="center"
-android:text="Далее"
-android:layout_marginTop="25dp"
-android:textSize="20sp"/> <!-- Без отступа для этой кнопки -->
+    android:id="@+id/loginButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Далее"
+    android:layout_marginTop="25dp"
+    android:textSize="20sp"
+    tools:ignore="HardcodedText,VisualLintButtonSize" /> <!-- Без отступа для этой кнопки -->
 
 <View
-android:layout_width="match_parent"
-android:layout_height="0dp"
-android:layout_weight="1" />
-    </LinearLayout>
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+</LinearLayout>
 

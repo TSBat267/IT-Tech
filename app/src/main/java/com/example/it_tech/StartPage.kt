@@ -18,10 +18,10 @@ class StartPage : AppCompatActivity() {
 
 
         helloUser = findViewById(R.id.topTextView)
-        startButton = findViewById(R.id.registerTextView)
+        startButton = findViewById(R.id.start_button)
 
         startButton.setOnClickListener {
-            val intent = Intent(this, Cash_reg:: class.java)
+            val intent = Intent(this, Cash_regg:: class.java)
 
             startActivity(intent)
         }
