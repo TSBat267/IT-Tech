@@ -78,7 +78,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/button_investment_tools"
+            android:id="@+id/button_investment_tools1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -86,14 +86,7 @@
             android:text="Инструменты инвестиций" />
 
         <Button
-            android:id="@+id/button_forecast"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Прогноз" />
-
-        <Button
-            android:id="@+id/button_wallet"
+            android:id="@+id/button_wallet1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
