@@ -24,12 +24,12 @@ class ValueActivity : AppCompatActivity() {
             val intent = Intent(this, WalletActivity::class.java)//страница с кошельком
             startActivity(intent)
             finish()
-
         }
         button_profile.setOnClickListener{
             val intent = Intent(this, ProfileActivity::class.java)//страница с профилем
             startActivity(intent)
             finish()
         }
+
     }
 }
